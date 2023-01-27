@@ -11,13 +11,13 @@ $(document).ready(function () {
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
-    $("#reserveButton").click(function () {
-        $("#reserveModal").modal();
+    $("#content-mapping").click(function () {
+        $(".form-container").fadeIn();
     });
-    $("#loginButton").click(function () {
-        $("#loginModal").modal();
+    $("#content-optimization").click(function () {
+        $(".form-container").fadeIn();
     });
-    $("#videoButton").click(function () {
-        $("#videoModal").modal();
+    $("#full-service-overhaul").click(function () {
+        $(".form-container").fadeIn();
     });
 });

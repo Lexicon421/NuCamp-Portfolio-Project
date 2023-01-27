@@ -10,25 +10,23 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- endbuild -->
 
-    
-        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-            crossorigin="anonymous" />
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <title>Paladins Exceed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+    <title>Paladins Exceed</title>
 </head>
 
 <body class="my-body">
 
     <header class="jumbotron jumbotron-fluid">
-        <div class="container">
+        <div class="container flex">
             <div class="row">
                 <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <img src="images\Paladin.jpg"
-                        class="img-fluid" alt="Paladins Exceed" />
+                    <img src="images\Paladin.svg" class="img-fluid" alt="Paladins Exceed" />
                 </div>
                 <div class="col d-flex justify-content-center align-items-center">
                     <h1>Paladin Exceed LLC</h1>
@@ -39,9 +37,9 @@
 
 
     <div class="container my-5">
-        <h1 class="col d-flex justify-content-center align-items-center">We are here for the people </h1>
+        <h1 class="col d-flex justify-content-center align-items-center" id="foreward">We are here for the people </h1>
         <nav class="navbar navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" id="navbar-brand" href="#">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -61,66 +59,47 @@
             </div>
         </nav>
 
-        <article id="intro">
-            <h2 class="major">Introduction</h2>
-            <span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-            <p>In the modern day and age of social media everyone has the opporuinty to be whoever they want on the internet. But not everyone is afforded
-                the same advantages when it comes to content creation. YouTube algorithms, TikTok's algorithm, and Instagram's algorithm all have a way of
-                making it hard for people to get their content out there. We are here to help you get your content out there and get you the recognition you
-                deserve. With our AI technology we can help expand your reach and get you the recognition you deserve. </p>
-                By the way, check out my <a
-                    href="#work">awesome work</a>.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
-                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-                libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
-                ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
-                Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
-                Pellentesque aliquam maximus risus, vel sed vehicula.</p>
-        </article>
+        <div class="container flex" style="display: flex;">
+            <div class="image">
+                <img src="images/Paladin.svg" id="logo" alt="Logo" />
+            </div>
+            <div class="text" style="margin-left: 20px;">
+                <article id="intro">
+                    <h2 class="major">Introduction</h2>
 
-        <div id="loginModal" class="modal fade" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Login</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-sm" id="loginEmail"
-                                            placeholder="Enter email address">
-                                    </div>
-                                    <div class="form-group col-12">
-                                        <label class="sr-only" for="loginPassword">Password</label>
-                                        <input type="password" class="form-control form-control-sm" id="loginPassword"
-                                            placeholder="Enter password">
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="rememberMe">
-                                            <label class="form-check-label" for="rememberMe">Remember me</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <button type="button" class="btn btn-secondary btn-sm ml-auto"
-                                        data-dismiss="modal">Cancel</button>
-                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
-                                </div>
-                        </div>
-                    </div>
-                    </form>
-                </div>
+                    <p>In the modern day and age of social media everyone has the opporuinty to be whoever they want on
+                        the
+                        internet. But not everyone is afforded
+                        the same advantages when it comes to content creation. YouTube algorithms, TikTok's algorithm,
+                        and
+                        Instagram's algorithm all have a way of
+                        making it hard for people to get their content out there. We are here to help you get your
+                        content out
+                        there and get you the recognition you
+                        deserve. With our AI technology we can help expand your reach and get you the recognition you
+                        deserve.
+                    </p>
+                    If you get a chance please, check out my <a href="#work">GitHub</a>.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class
+                        aptent
+                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+                        libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices
+                        eros ut
+                        ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
+                        Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi
+                        tristique
+                        senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat
+                        maximus.
+                        Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+                </article>
             </div>
         </div>
 
+
+
+
+
         <div class="container">
-        
             <div class="row row-content">
                 <div class="col-md-8 mx-auto">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
@@ -131,7 +110,8 @@
                         </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcumb Trail Campground" />
+                                <img class="d-block w-100" src="img/breadcrumb-trail.jpg"
+                                    alt="Breadcumb Trail Campground" />
                                 <div class="carousel-caption">
                                     <h3>Breadcrumb Trail Campground</h3>
                                     <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path,
@@ -151,7 +131,8 @@
                                 <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
                                 <div class="carousel-caption">
                                     <h3>Chrome River Campground</h3>
-                                    <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy
+                                    <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a
+                                        canopy
                                         of old-growth firs at this enchanting spot by the Chrome
                                         River.</p>
                                 </div>
@@ -169,31 +150,56 @@
                             <i class="fa fa-pause"></i>
                         </button>
                     </div>
-                    <button id="videoButton">Watch Video</button>
-                    
-                    <div id="videoModal" class="modal">
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <iframe src="https://www.youtube.com/embed/your_video_id" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <div id="about" style="display: flex; justify-content: center;">
+            <section>
+                <h2>About</h2>
+                <p>
+                    At Paladin Exceed, we are here to help you exceed your own expectations. We are a small business
+                    that is
+                    dedicated to helping you
+                    succeed. We are here to help you with your content needs. We can help you with content mapping,
+                    content
+                    optimization, and full
+                    service overhauls. You deserve to succeed, and we are here to help you get there. No matter what
+                    your
+                    content needs are, we are here.
+                </p>
+            </section>
+
+            <img class="video-thumbnail" src="path/to/thumbnail-image.jpg" alt="video thumbnail" onclick="openModal()">
+
+            <button id="videoButton">Watch Video</button>
+
+            <div class="modal" tabindex="-1" id="videoModal" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Embedded Video</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eWhtiB5hBvA"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>
-                At Paladin Exceed, we are here to help you exceed your own expectations. We are a small business that is
-                dedicated to helping you
-                succeed. We are here to help you with your content needs. We can help you with content mapping, content
-                optimization, and full
-                service overhauls. You deserve to succeed, and we are here to help you get there. No matter what your
-                content needs are, we are here.
-            </p>
 
-            
+
+
+
 
         </section>
 
@@ -202,7 +208,9 @@
                 <a href="#" class="image icon solid fa-signal"><img src="images/pic01.jpg" alt="" /></a>
                 <div class="content">
                     <h3>The First Thing</h3>
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat
+                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.
+                        Tellus
+                        erat
                         mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
                 </div>
             </section>
@@ -210,7 +218,9 @@
                 <a href="#" class="image icon solid fa-code"><img src="images/pic02.jpg" alt="" /></a>
                 <div class="content">
                     <h3>The Second Thing</h3>
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat
+                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.
+                        Tellus
+                        erat
                         mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
                 </div>
             </section>
@@ -218,76 +228,96 @@
                 <a href="#" class="image icon solid fa-mobile-alt"><img src="images/pic03.jpg" alt="" /></a>
                 <div class="content">
                     <h3>The Third Thing</h3>
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat
+                    <p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus.
+                        Tellus
+                        erat
                         mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis fusce lacus.</p>
                 </div>
             </section>
         </div>
 
-        <section id="services">
-            <div class="services-section">
-                <h2>Services</h2>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="servicesDropdown"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select Service
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                        <a class="dropdown-item" href="#">Content mapping</a>
-                        <a class="dropdown-item" href="#">Content optimization</a>
-                        <a class="dropdown-item" href="#">Full service overhaul</a>
+        <div class="container">
+            <section id="services">
+                <div class="services-section">
+                    <h2>Services</h2>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="servicesDropdown" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Select Service
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a id="content-mapping" class="dropdown-item" href="javascript:void(0);">Content mapping</a>
+                            <a id="content-optimization" class="dropdown-item" href="javascript:void(0);">Content optimization</a>
+                            <a id="full-service-overhaul" class="dropdown-item" href="javascript:void(0);">Full service overhaul</a>
+                        </div>
+                    </div>
+                    <div class="form-container" style="display:none;">
+                        <form>
+                            <div class="form-group">
+                                <label for="titleInput">Title</label>
+                                <input type="text" class="form-control" id="titleInput" placeholder="Enter title">
+                            </div>
+                            <div class="form-group">
+                                <label for="descriptionInput">Description</label>
+                                <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Enter description"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="detailsInput">Details</label>
+                                <textarea class="form-control" id="detailsInput" rows="3" placeholder="Enter details"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="contact-section">
-                <h4>Contact</h4>
-                <p>
-                Email: lexiethach@paladinexceed.com
-                <br />
-                Phone: 315-820-2365
-            </p>
-
-            <form method="post" action="#">
-                <div class="row">
-                    <div class="col-6 col-12-mobilep">
-                        <input type="text" name="name" placeholder="Name" />
-                    </div>
-                    <div class="col-6 col-12-mobilep">
-                        <input type="email" name="email" placeholder="Email" />
-                    </div>
-                    <div class="col-12">
-                        <textarea name="message" placeholder="Message" rows="6"></textarea>
-                    </div>
-                    <div class="col-12">
-                        <ul class="actions special">
-                            <li><input type="submit" value="Send Message" /></li>
-                        </ul>
-                    </div>
-                </div>
-            </form>
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-            </ul>
+            </section>
         </div>
 
+        <div class="container">
+            <section id="contact">
+                <div class="contact-section">
+                    <h4>Contact</h4>
+                    <p>
+                        Email: lexiethach@paladinexceed.com
+                        <br />
+                        Phone: 315-820-2365
+                    </p>
+                    <form method="post" action="#">
+                        <div class="row">
+                            <div class="col-6 col-12-mobilep">
+                                <input type="text" name="name" placeholder="Name" />
+                            </div>
+                            <div class="col-6 col-12-mobilep">
+                                <input type="email" name="email" placeholder="Email" />
+                            </div>
+                            <div class="col-12">
+                                <textarea name="message" placeholder="Message" rows="6"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <ul class="actions special">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                    </ul>
+                </div>
+            </section>
 
-        </section>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
