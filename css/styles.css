@@ -1,0 +1,158 @@
+h1, h2, p,
+button, body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+.site-footer {
+    background-image: linear-gradient(#CEC8FF, white);
+    padding: 20px 0;
+}
+
+.my-body {
+    background-image: linear-gradient(#44b0be, white);
+}
+
+.jumbotron {
+    font-weight: bold;
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, rgb(207, 205, 69), #090d25, #1997a8);
+    color: white;
+}
+
+
+.navbar {
+    color: white;
+    background-color: #4335c5;
+    border: solid #37b6dd; 
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.carousel {
+    border: solid #37b6dd;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #37b6dd;
+}
+
+.carousel {
+    border: solid #37b6dd;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#contact {
+    font-family: 'Titillium Web', sans-serif;
+    width: 80%;
+    /* or any other width */
+    margin: 0 auto;
+}
+
+.box {
+    background: #ffffff;
+    border: solid 1px rgba(224, 224, 224, 0.75);
+    margin-bottom: 6em;
+    padding: 3.5em;
+}
+
+.box.alt {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Icons */
+
+ul.icons {
+    cursor: default;
+}
+
+ul.icons li {
+    display: inline-block;
+    font-size: 1.25em;
+    line-height: 1em;
+    padding-left: 0.5em;
+}
+
+ul.icons li:first-child {
+    padding-left: 0;
+}
+
+ul.icons li a,
+ul.icons li span {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100%;
+    border: solid 1px rgba(224, 224, 224, 0.75);
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+}
+
+ul.icons li a:hover,
+ul.icons li span:hover {
+    background: rgba(224, 224, 224, 0.15);
+}
+
+#videoModal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 100%;
+}
