@@ -189,29 +189,24 @@
             <img class="video-thumbnail" src="images/Playbutton.svg" alt="video thumbnail" onclick="openModal()">
             <div class="modal" tabindex="-1" id="videoModal" role="dialog">
                 <div class="modal-dialog" role="document">
-                    <div class="modal-content">
+                    <div class="modal-content" width="1920" height="1080">
                         <div class="modal-header">
                             <h5 class="modal-title">Introduction Video</h5>
                         </div>
                         <div class="modal-body">
-                            <iframe id="myFrame" width="1280" height="720"
+                            <iframe id="myFrame" width="1920" height="1080"
                                 src="https://www.youtube.com/embed/eWhtiB5hBvA" frameborder="0" draggable="true"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+                            <button type="button" class="btn btn-secondary" onclick="closeVideoModal()">Close</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         
-        
-
-
-
-
 
         <div class="line-break"></div>
 
@@ -236,6 +231,8 @@
                     </div>
                     <div class="modal" id="servicesModal" role="dialog">
                         <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
                             <form action="/submit-service" method="post">
                                 <div class="form-group">
                                     <label for="titleInput">Title</label>
@@ -262,17 +259,7 @@
                 </div>
         </div>
         </section>
-        <script>
-            function showModal(serviceId) {
-                var modal = document.getElementById("servicesModal");
-                modal.style.display = "block";
-            }
-
-            function closeModal() {
-                var modal = document.getElementById("servicesModal");
-                modal.style.display = "none";
-            }
-        </script>
+        
         <br>
         <br>
         <div class="box alt container" id="servicedetails">
@@ -379,12 +366,23 @@
                 closeModal();
             }
         }
-        function closeModal() {
+        function closeVideoModal() {
             document.getElementById("videoModal").style.display = "none";
             var iframe = document.getElementById("myFrame");
             iframe.src += "?enablejsapi=1&mute=1";
             var player = new YT.Player(iframe);
             player.stopVideo();
+        }
+    </script>
+    <script>
+        function showModal(serviceId) {
+            var modal = document.getElementById("servicesModal");
+            modal.style.display = "block";
+        }
+
+        function closeModal() {
+            var modal = document.getElementById("servicesModal");
+            modal.style.display = "none";
         }
     </script>
 
