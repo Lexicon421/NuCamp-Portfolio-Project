@@ -1,8 +1,37 @@
-h1, h2, p,
+h1, h2, h3, p,
 button, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(2, 0, 24);
+}
+
+h2.major {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(2, 0, 24);
+}
+
+#servicedetails {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(2, 0, 24);
+}
 
 #foreward {
     font-family: 'Titillium Web', sans-serif;
@@ -17,7 +46,7 @@ button, body {
 }
 
 .my-body {
-    background-image: linear-gradient(#44b0be, white);
+    background-image: linear-gradient(#2bb8b1, white);
 }
 
 .jumbotron {
@@ -48,7 +77,7 @@ button, body {
 
 .img-fluid {
     border-radius: 20%;
-        overflow: hidden;/
+        overflow: hidden;
 }
 
 .image img {
@@ -57,6 +86,7 @@ button, body {
 }
 
 #intro {
+    font-weight: bold;
     font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     color: black;
@@ -95,19 +125,34 @@ button, body {
 
 
 #videoModal {
-    display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 100px;
+    bottom: 10px;
     left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    right: 0;
+    margin-top: bottom;
 }
 
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+#about {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
 
 .modal-content {
     position: relative;
@@ -139,6 +184,29 @@ button, body {
     height: 100%;
 }
 
-#fade-in-form.hidden {
-    display: none;
+
+
+.line-break {
+    width: 100%;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgb(207, 205, 69), #090d25, #1997a8);
+    margin: 20px 0;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature .image {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.feature .content {
+    flex: 2;
+}
+
+.feature .image img {
+    width: 100%;
+    height: auto;
 }

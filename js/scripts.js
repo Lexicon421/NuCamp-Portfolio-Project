@@ -1,23 +1,27 @@
 $(document).ready(function () {
-    $(".carousel").carousel({ interval: 2000 });
+    // Initialize carousel
+    $(".carousel-container .carousel").carousel({ interval: 2000 });
+
+    // Toggle play/pause on carousel when "carouselButton" is clicked
     $("#carouselButton").click(function () {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
-            $(".carousel").carousel("pause");
+            $(".carousel-container .carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
             $("#carouselButton").children("i").addClass("fa-play");
         } else {
-            $(".carousel").carousel("cycle");
+            $(".carousel-container .carousel").carousel("cycle");
             $("#carouselButton").children("i").removeClass("fa-play");
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
-    $("#content-mapping").click(function () {
+
+    // Show form when "content-mapping", "content-optimization", or "full-service-overhaul" is clicked
+    $(document).on("click", ".dropdown-item", function () {
         $(".form-container").fadeIn();
     });
-    $("#content-optimization").click(function () {
-        $(".form-container").fadeIn();
-    });
-    $("#full-service-overhaul").click(function () {
-        $(".form-container").fadeIn();
+
+    // Hide "videoModal" when it or its "btn" element is clicked
+    $("#videoModal, #videoModal .modal-footer .btn").click(function () {
+        $("#videoModal").hide();
     });
 });
